@@ -1,0 +1,19 @@
+extends api
+
+block content
+    div.white.container.z-depth-1
+        table.white.striped
+            thead
+                tr
+                    th Nome
+                    th Idade
+                    th Sexo
+                    th Signo
+            tbody            
+            each pessoa in pessoas
+                tr
+                    td= pessoa.nome
+                    td= pessoa.idade
+                    td= pessoa.sexo == 'm' ? 'Masculino' : 'Feminino'
+                    td= pessoa.signo
+block script

@@ -1,0 +1,51 @@
+extends layout
+
+block menu
+    div.navbar-fixed
+        nav(role="navigation").light-blue.lighten-1
+            div.dav-wrapper
+                ul#nav-left.left
+                    li
+                        a(href="/api") Home
+                    li
+                        a(href="/pessoa") Pessoas
+
+block content
+    div.container
+        div.white.container.login.z-depth-1
+            h5 Dados pessoais
+            form(method="post")#pessoa-form
+                div
+                    div.input-field.col.s12
+                        input(name="nome",type="text",required)#nome.validate
+                        label(for="nome") Nome
+                div
+                    div.input-field.col.s12
+                        input(name="data-nasc",type="text",required)#data-nasc.validate.datepicker
+                        label(for="data-nasc") Data de nascimento
+                div
+                    div.input-field.col.s12
+                        select(name="sexo",required)#sexo.validate
+                            option(value="",disabled,selected) Selecione...
+                            option(value="feminino") Feminino
+                            option(value="masculino") Masculino
+                        label(for="sexo") Sexo
+                div
+                    button(type="submit").btn.waves-effect Salvar
+                        i.material-icons.right save
+        div.white.container.login.z-depth-1
+            h5 Fibonacci
+            form(method="post")#fibonacci-form
+                div
+                    div.input-field.col.s12
+                        input(name="primeiro",type="number",required)#primeiro.validate
+                        label(for="primeiro") Primeiro valor
+                div
+                    div.input-field.col.s12
+                        input(name="qtde",type="number",required)#qtde.validate
+                        label(for="qtde") Quantidade
+                div
+                    button(type="submit").btn.waves-effect Calcular
+                        i.material-icons.right add_box
+block script
+    script(type='text/javascript', src='/js/api.js')

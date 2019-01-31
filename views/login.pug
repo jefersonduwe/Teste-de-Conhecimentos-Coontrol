@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    div.white.container.login.z-depth-1
+        h5 Login
+        form(method="post")#login-form
+            div
+                div.input-field.col.s12
+                    input(name="login",type="text",required)#login.validate
+                    label(for="login") login
+            div
+                div.input-field.col.s12
+                    input(name="senha",type="password",required)#senha.validate
+                    label(for="senha") Senha
+            div
+                button(type="submit").btn.waves-effect Login
+                    i.material-icons.right send
+block script
+    script(type='text/javascript', src='/js/login.js')
