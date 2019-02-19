@@ -6,7 +6,7 @@ As tecnologias utilizadas foram:
 - NPM 6.7.0
 - Express 4.16.0
 - Postgres 10.6
-Além de outros pacotes Npm que podem ser encontrados no package.json
+- Além de outros pacotes Npm que podem ser encontrados no package.json
 
 Os scripts para criação da base de dados encontram-se na pasta "mer".
 Para configucão da base de dados pode-se editar a string de conexão no arquivo "dbPromise.js" na pasta "persistencia".
