@@ -9,6 +9,6 @@ As tecnologias utilizadas foram:
 - Além de outros pacotes Npm que podem ser encontrados no package.json
 
 Os scripts para criação da base de dados encontram-se na pasta "mer".
-Para configucão da base de dados pode-se editar a string de conexão no arquivo "dbPromise.js" na pasta "persistencia".
+Para configuracão da base de dados pode-se editar a string de conexão no arquivo "dbPromise.js" na pasta "persistencia".
 
 ### Obrigado
