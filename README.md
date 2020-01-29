@@ -1,5 +1,5 @@
 # Teste de Conhecimentos Coontrol
-Está API foi desenvolvida com o intuíto de testar minhas habilidades
+Esta API foi desenvolvida com o intuito de testar minhas habilidades
 
 As tecnologias utilizadas foram:
 - Node v10.15.0
